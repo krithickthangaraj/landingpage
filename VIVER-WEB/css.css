@@ -1,0 +1,25 @@
+/* Add your custom styles here */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .countdown-container,
+  .parallax-container {
+    width: calc(50% - 20px); /* Adjust as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .countdown-container,
+    .parallax-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

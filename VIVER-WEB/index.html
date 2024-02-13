@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech2etc Ecommerce Tutorial</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+      <section id="head">
+        <a href="#"><img id="img" src="image/lo.png" class="logo" alt="Kec"></a>
+    
+        <div>
+            <ul id="nav">
+                <li><a class="active" href="/Users/mac/Desktop/VS Code/Events/index.html">Home </a> </li>
+                <li><a href="#ban">Events</a></li>
+                <li><a href="#section">Clubs</a></li>
+                <li><a href="/Users/mac/Desktop/VS Code/Events/about.html">About </a>  </li>
+                <li><a href="">Contact</a>   </li>
+                <li><a href=""><i class="fa fa-calendar" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+       </section>
+
+     
+     <section class="parallel">
+
+     
+        <div class="open">
+          <h1 id="headline">Countdown starts !!</h1>
+          
+          <div id="countdown">
+            <ul>
+              <li><span id="days"></span>days</li>
+              <li><span id="hours"></span>Hours</li>
+              <li><span id="minutes"></span>Minutes</li>
+              <li><span id="seconds"></span>Seconds</li>
+            </ul>
+            <div class="sam">
+              <h5>Feb 28,2024</h5>
+              <span>Inter college symposium</span>
+            </div>
+          </div>
+          <div id="content" class="emoji">
+            <span>🥳</span>
+            <span>🎉</span>
+            <span>🎂</span>
+          </div>
+        </div>
+      
+      
+
+      <div class="container">
+        <h2 class="object" data-value="3">Vivere<br><span>IT-department</span></h2>
+        <img src="image/1.png" class="object" data-value="-2" alt="">
+        <img src="image/2.png" class="object" data-value="6" alt="">
+        <img src="image/3.png" class="object" data-value="4" alt="">
+        <img src="image/4.png" class="object" data-value="-6" alt="">
+        <img src="image/5.png" class="object" data-value="8" alt="">
+        <img src="image/6.png" class="object" data-value="-4" alt="">
+        <img src="image/7.png" class="object" data-value="5" alt="">
+        <img src="image/8.png" class="object" data-value="-9" alt="">
+        <img src="image/9.png" class="object" data-value="-5" alt="">
+      </div>
+  
+      <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e){
+        document.querySelectorAll(".object").forEach(function(move){
+  
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 250;
+          var y = (e.clientY * moving_value) / 250;
+  
+          move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+      </script>
+
+    </section>
+  
+    
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
